@@ -1,3 +1,18 @@
-# Weights
+# BTXRD Bone Lesion Classification
 
-Place trained model weight files here before release, or provide the permanent archive link in the repository README.
+Source code for ROI-guided three-class bone lesion classification on radiographs using image features and clinical metadata.
+
+Dataset:
+The BTXRD dataset should be placed under data/btxrd/ with the following structure:
+
+data/btxrd/images/
+data/btxrd/Annotations/
+data/btxrd/dataset.xlsx
+
+Install:
+pip install -r requirements.txt
+
+Run:
+python train.py
+
+Outputs are written under the outputs/ directory.
